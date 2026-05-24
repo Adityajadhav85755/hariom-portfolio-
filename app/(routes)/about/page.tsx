@@ -54,21 +54,25 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="space-y-4 p-6 leading-relaxed">
                   <p>
-                    I&apos;m Achyut Katiyar, a software engineer pursuing a Master&apos;s in
-                    Computer Science at Northeastern University. I build full-stack applications and
-                    decentralized systems — from production websites serving thousands of users to
-                    blockchain platforms that have won multiple hackathon prizes.
+                    I&apos;m Hariom Upadhyay, a financial analyst pursuing Chartered Financial
+                    Analyst (CFA) certification from Vidyalankar School of Information Technology,
+                    Mumbai. I specialize in equity research, portfolio management, and financial
+                    modeling — from comprehensive investment analysis to data-driven portfolio
+                    dashboards that inform investment decisions.
                   </p>
                   <p>
-                    I&apos;m currently Co-Chair of Hackathon and Marketing for the MIT Bitcoin Expo,
-                    where I built the official event website and coordinate the 36-hour hackathon. I
-                    also serve as a Teaching Assistant for CS2000 at Northeastern.
+                    I&apos;m currently working as a Research and Promotions Intern at Evepaper,
+                    where I conduct company research and analyze startup growth potential. I also
+                    serve as Head of Operations for The Legal Club at VSIT and have won multiple
+                    finance competitions including 1st place at Investors Instinct and Finance Model
+                    Competition.
                   </p>
                   <p>
-                    My work spans the full stack — Next.js, React, Node.js, TypeScript on the
-                    frontend and backend, Solidity and TEALScript for smart contracts, Python for
-                    data analysis and ML, and Docker/Kubernetes for infrastructure. I&apos;ve won
-                    over $3,000 in hackathon prizes and built projects used by thousands.
+                    My expertise spans financial analysis and investment tools — Excel for advanced
+                    financial modeling, Power BI for data visualization, Python for quantitative
+                    analysis, and various stock market platforms for fundamental research. I&apos;ve
+                    won multiple finance competitions and hold key certifications including NISM
+                    Research Analyst and Equity Derivatives.
                   </p>
                 </CardContent>
               </Card>
@@ -117,7 +121,7 @@ export default function AboutPage() {
                 {Object.keys(skills).map((category) => (
                   <Card key={category}>
                     <CardContent className="p-5">
-                      <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+                      <h3 className="mb-3 text-sm font-semibold tracking-wider text-primary uppercase">
                         {category}
                       </h3>
                       <div className="flex flex-wrap gap-2">

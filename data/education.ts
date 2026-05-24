@@ -6,25 +6,46 @@ export interface Education {
   startDate: string;
   endDate: string;
   gpa?: string;
+  percentage?: string;
   description?: string;
 }
 
 export const education: Education[] = [
   {
-    id: "northeastern",
-    degree: "Master's in Computer Science",
-    institution: "Northeastern University",
-    location: "Boston, Massachusetts, USA",
+    id: "cfa-level-1",
+    degree: "Chartered Financial Analyst (CFA) - Level 1",
+    institution: "CFA Institute, USA",
+    location: "USA",
     startDate: "January 2025",
-    endDate: "May 2027",
+    endDate: "January 2026",
+    description: "Passed",
+    percentage: "90%ile",
   },
   {
-    id: "srm",
-    degree: "Bachelor of Science in Computer Science",
-    institution: "SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "October 2020",
-    endDate: "May 2024",
-    gpa: "8.3/10.00",
+    id: "bms",
+    degree: "Bachelor of Management Studies (BMS)",
+    institution: "Vidyalankar School of Information Technology, Mumbai",
+    location: "Mumbai, India",
+    startDate: "2021",
+    endDate: "2024",
+    gpa: "8.73/10",
+  },
+  {
+    id: "hsc",
+    degree: "Higher Secondary (HSC XII)",
+    institution: "Siddharth College of Commerce & Economics, Fort, Mumbai",
+    location: "Mumbai, India",
+    startDate: "2019",
+    endDate: "February 2021",
+    gpa: "75%",
+  },
+  {
+    id: "ssc",
+    degree: "Secondary (SSC X)",
+    institution: "Bara Devi School, Parel, Mumbai",
+    location: "Mumbai, India",
+    startDate: "2019",
+    endDate: "March 2019",
+    gpa: "58.40%",
   },
 ];

@@ -155,12 +155,12 @@ If you'd like to use this template for your own portfolio website, you are welco
 ### Attribution Requirements
 
 1. **Required Attribution**:
-   - You must maintain the original credit in the footer: "Original design by [Achyut Katiyar](https://github.com/achyut21)"
+   - You must maintain the original credit in the footer: "Original design by [Hariom Upadhyay](https://github.com/hariom-upadhyay)"
    - Keep the attribution link in the README
 
 2. **GitHub Repository**:
    - If you fork or clone this repository, please star the original repository
-   - Include a clear statement in your README indicating that your project is based on Achyut Katiyar's portfolio template
+   - Include a clear statement in your README indicating that your project is based on Hariom Upadhyay's portfolio template
 
 3. **Customization Requirements**:
    - Change the personal information to your own

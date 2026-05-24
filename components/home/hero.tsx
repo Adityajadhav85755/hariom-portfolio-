@@ -12,10 +12,11 @@ import { getIconComponent } from "@/lib/icons";
 import { StarHeader } from "@/components/shared/star-header";
 
 const displayedSkills = [
-  "Software Engineer",
-  "Full Stack Developer",
-  "Blockchain Builder",
-  "Systems Thinker",
+  "Equity Research",
+  "Financial Analyst",
+  "Portfolio Management",
+  "Investment Banking",
+  "Startup Investment",
 ];
 
 export function Hero() {
@@ -47,7 +48,7 @@ export function Hero() {
                   transition={{ duration: 0.5 }}
                 >
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I&apos;m Achyut Katiyar
+                    Hi, I&apos;m Hariom Upadhyay
                   </h1>
                 </motion.div>
                 <motion.div
@@ -77,8 +78,9 @@ export function Hero() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="max-w-[600px] text-muted-foreground md:text-xl"
                 >
-                  Software engineer building full-stack applications and decentralized systems. MS
-                  Computer Science at Northeastern University. Co-Chair of MIT Bitcoin Expo.
+                  Financial analyst specializing in equity research, portfolio management, and
+                  data-driven investment strategies. Building tools for financial modeling and
+                  market analysis.
                 </motion.p>
               </div>
 
@@ -97,8 +99,8 @@ export function Hero() {
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <a
-                    href="/resume.pdf"
-                    download="Achyut_Katiyar_Resume.pdf"
+                    href="/Resume[1].pdf"
+                    download="Resume[1].pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -142,23 +144,60 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              className="flex items-center justify-center"
-              style={{ y: y2 }}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full">
-                <Image
-                  src="/images/profile.webp"
-                  alt="Achyut Katiyar"
-                  fill
-                  className="object-cover"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 400px"
-                />
-              </div>
-            </motion.div>
+  className="flex items-center justify-center"
+  style={{ y: y2 }}
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5, delay: 0.4 }}
+>
+  <div className="relative">
+    {/* Glow Effect */}
+    <div
+      className="absolute inset-0 rounded-full blur-3xl opacity-30"
+      style={{
+        background:
+          "conic-gradient(from 225deg, rgba(81,156,254,0.9), rgb(72,46,147), rgb(198,95,245), rgba(138,102,255,0.7), rgba(81,156,254,0.9))",
+      }}
+    />
+
+    {/* Image */}
+    <div
+      className="
+        relative
+        aspect-square
+        overflow-hidden
+        rounded-full
+        border-4
+        border-indigo-500/20
+        shadow-2xl
+        shadow-indigo-500/20
+
+        h-[280px]
+        w-[280px]
+
+        sm:h-[340px]
+        sm:w-[340px]
+
+        md:h-[440px]
+        md:w-[440px]
+      "
+    >
+      <Image
+        src="/images/profile11.webp"
+        alt="Hariom Upadhyay"
+        fill
+        priority
+        quality={100}
+        sizes="(max-width: 640px) 260px, (max-width: 768px) 320px, 420px"
+        className="
+          object-cover
+          object-top
+          scale-[1.02]
+        "
+      />
+    </div>
+  </div>
+</motion.div>
           </div>
         </div>
       </section>

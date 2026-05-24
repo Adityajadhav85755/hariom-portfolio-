@@ -3,51 +3,51 @@ import { ClientLayout } from "./client-layout";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Achyut Katiyar | Software Engineer",
+  title: "Hariom Upadhyay | Financial Analyst",
   description:
-    "Software Engineer building full-stack applications and decentralized systems. MS Computer Science at Northeastern University. Co-Chair of MIT Bitcoin Expo.",
-  metadataBase: new URL("https://achyutkatiyar.com"),
+    "Financial analyst specializing in equity research, portfolio management, and data-driven investment strategies. Building tools for financial modeling and market analysis.",
+  metadataBase: new URL("https://hariom-upadhyay.com"),
 
   // Basic metadata
-  applicationName: "Achyut Katiyar Portfolio",
-  authors: [{ name: "Achyut Katiyar" }],
+  applicationName: "Hariom Upadhyay Portfolio",
+  authors: [{ name: "Hariom Upadhyay" }],
   keywords: [
-    "Software Engineer",
-    "Full Stack Developer",
-    "Blockchain",
-    "Web3",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Northeastern University",
-    "MIT Bitcoin Expo",
+    "Financial Analyst",
+    "Equity Research",
+    "Portfolio Management",
+    "Data Analysis",
+    "Financial Modeling",
+    "Investment Strategies",
   ],
 
   openGraph: {
     type: "website",
-    url: "https://achyutkatiyar.com",
-    title: "Achyut Katiyar | Software Engineer",
+    url: "https://hariom-upadhyay.com",
+    title: "Hariom Upadhyay | Financial Analyst",
     description:
-      "Software Engineer building full-stack applications and decentralized systems. MS CS at Northeastern. Co-Chair of MIT Bitcoin Expo.",
-    siteName: "Achyut Katiyar",
+      "Financial analyst specializing in equity research, portfolio management, and data-driven investment strategies. Building tools for financial modeling and market analysis.",
+    siteName: "Hariom Upadhyay",
     locale: "en_US",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Achyut Katiyar - Portfolio",
+        alt: "Hariom Upadhyay - Portfolio",
       },
     ],
   },
 
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+    icon: [
+      { url: "/icon2.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
     apple: { url: "/apple-touch-icon.png" },
   },
 
   alternates: {
-    canonical: "https://achyutkatiyar.com",
+    canonical: "https://hariom-upadhyay.com",
   },
 };
 

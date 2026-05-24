@@ -21,10 +21,11 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* About Section */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Achyut Katiyar</h3>
+            <h3 className="text-lg font-bold">Hariom Upadhyay</h3>
             <p className="max-w-xs text-sm text-muted-foreground">
-              Software Engineer based in Boston. MS Computer Science at Northeastern. Building
-              full-stack applications and decentralized systems.
+              Passionate about building financial tools and data-driven solutions.
+              Exploring the intersection of finance and technology.
+              Always learning and building.
             </p>
           </div>
 
@@ -58,7 +59,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/resume.pdf"
+                  href="/Resume[1].pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-primary"
@@ -125,12 +126,12 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex items-center text-sm text-muted-foreground">
               <Copyright className="mr-1 h-3.5 w-3.5" />
-              <span>{new Date().getFullYear()} Achyut Katiyar. All rights reserved.</span>
+              <span>{new Date().getFullYear()} Hariom Upadhyay. All rights reserved.</span>
             </div>
             <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-              <span>Built with</span>
+              <span>Built By</span>
               <Heart className="h-3.5 w-3.5 fill-primary text-primary" />
-              <span>using Next.js & Tailwind</span>
+              <span>Aditya Vinayak Jadhav</span>
             </div>
           </div>
         </motion.div>

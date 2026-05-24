@@ -7,27 +7,33 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   {
-    id: "github",
-    name: "GitHub",
-    url: "https://github.com/achyut21",
-    icon: "github",
+    id: "instagram",
+    name: "Instagram",
+    url: "https://www.instagram.com/__hariom_10_/?hl=en",
+    icon: "instagram",
+  },
+  {
+    id: "whatsapp",
+    name: "WhatsApp",
+    url: "https://wa.me/919967623254",
+    icon: "whatsapp",
   },
   {
     id: "linkedin",
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/achyutkatiyar2103/",
+    url: "https://linkedin.com/in/hariom-upadhyay",
     icon: "linkedin",
   },
   {
     id: "email",
     name: "Email",
-    url: "mailto:achyutkatiyar21@gmail.com",
+    url: "mailto:hariomup231@gmail.com",
     icon: "mail",
   },
   {
     id: "phone",
     name: "Phone",
-    url: "tel:+18575766733",
+    url: "tel:+919967623254",
     icon: "phone",
   },
 ];

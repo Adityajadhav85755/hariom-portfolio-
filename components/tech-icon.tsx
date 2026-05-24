@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Code } from "lucide-react";
+import { iconMap } from "@/utils/iconMap";
 
 interface TechIconProps {
   logoKey: string;
@@ -11,7 +12,15 @@ interface TechIconProps {
 }
 
 // Icons that are pure black/dark and need inversion on dark backgrounds
-const darkLogoKeys = new Set(["nextjs", "express", "threejs", "flask", "github", "markdown"]);
+const darkLogoKeys = new Set([
+  "nextjs",
+  "express",
+  "threejs",
+  "flask",
+  "github",
+  "markdown",
+  "excel",
+]);
 
 export function TechIcon({ logoKey, name, className = "h-5 w-5" }: TechIconProps) {
   const getIconUrl = () => {
@@ -19,6 +28,8 @@ export function TechIcon({ logoKey, name, className = "h-5 w-5" }: TechIconProps
       return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg";
     if (logoKey === "tailwindcss")
       return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg";
+    if (logoKey === "canva")
+      return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg";
     return `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${logoKey}/${logoKey}-original.svg`;
   };
 
@@ -29,6 +40,20 @@ export function TechIcon({ logoKey, name, className = "h-5 w-5" }: TechIconProps
   const [src, setSrc] = useState(getIconUrl());
   const [usedFallback, setUsedFallback] = useState(false);
   const [imageError, setImageError] = useState(false);
+
+  const getIconComponent = () => {
+    const IconComponent = iconMap[logoKey];
+    if (IconComponent) {
+      return <IconComponent className="h-5 w-5" />;
+    }
+    return null;
+  };
+
+  const iconComponent = getIconComponent();
+
+  if (iconComponent) {
+    return <div className={`${className} flex items-center justify-center`}>{iconComponent}</div>;
+  }
 
   if (imageError) {
     return (

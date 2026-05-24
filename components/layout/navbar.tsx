@@ -147,8 +147,8 @@ function MobileMenu({
                 {/* Resume download button */}
                 <div className="mt-2 border-t border-border/30 pt-2">
                   <a
-                    href="/resume.pdf"
-                    download="Achyut_Katiyar_Resume.pdf"
+                    href="/Resume[1].pdf"
+                    download="Resume[1].pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={onClose}
@@ -256,7 +256,7 @@ export function Navbar() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5 }}
                     >
-                      Achyut Katiyar
+                      Hariom Upadhyay
                     </motion.span>
                   </Link>
                 </div>

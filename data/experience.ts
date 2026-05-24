@@ -1,4 +1,5 @@
 // data/experience.ts
+
 export interface Experience {
   id: string;
   title: string;
@@ -12,180 +13,193 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
-  // ── Current Roles ──────────────────────────────────────────────────
+  // ── Tradonomy ──────────────────────────────────────────────
   {
-    id: "mit-bitcoin-expo",
-    title: "Co-Chair, Hackathon & Marketing",
-    company: "MIT Bitcoin Expo",
-    location: "Cambridge, Massachusetts, USA",
-    startDate: "January 2026",
+    id: "tradonomy-research-analyst",
+    title: "Research Analyst",
+    company: "Tradonomy",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "April 2025",
     endDate: "Present",
     description:
-      "Co-chairing the hackathon and marketing efforts for the 13th Annual MIT Bitcoin Expo, the longest-running university-hosted Bitcoin event.",
+      "Working as a Research Analyst at Tradonomy inside the Bombay Stock Exchange building office, focusing on equity research, valuation, and market analysis.",
+
     achievements: [
-      "Co-chair of the 36-hour hackathon with a community-first prize model (70% shared among qualifying participants)",
-      "Designed and built the official event website (mitbitcoinexpo.org) with Next.js, Three.js, and Vercel",
-      "Coordinated speaker lineup, sponsor outreach, and marketing campaigns for the April 2026 conference",
-      "Managing cross-functional collaboration across engineering, design, and operations teams",
+      "Prepared Global Indices Report analyzing international indices and reasons behind recent FII selling pressure",
+      "Worked on Union Budget 2025 report highlighting key announcements, high-impact sectors, and beneficiary stocks",
+      "Conducted historical stock return study covering 1, 3, 5, and 10-year returns across market segments",
+      "Prepared equity research reports on Vedanta Ltd., Manappuram Finance Ltd., and ABB India",
+      "Performed peer comparison, valuation analysis, and financial research",
     ],
+
+    type: "work",
+  },
+
+  // ── ICICI Prudential ───────────────────────────────────────
+  {
+    id: "icici-financial-advisor",
+    title: "Financial Advisor",
+    company: "ICICI Prudential Life Insurance Company Limited",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "November 2023",
+    endDate: "January 2025",
+    description:
+      "Worked as a freelance Financial Advisor providing financial planning and insurance solutions to clients.",
+
+    achievements: [
+      "Guided clients in selecting suitable financial and insurance products",
+      "Developed communication and relationship management skills",
+      "Assisted customers with financial planning and investment-related queries",
+      "Worked in a hybrid environment managing client interactions and support",
+    ],
+
+    type: "work",
+  },
+
+  // ── The Legal Club VSIT - Head of Operations ───────────────
+  {
+    id: "legal-club-head-operations",
+    title: "Head of Operations",
+    company: "The Legal Club VSIT",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "July 2023",
+    endDate: "July 2024",
+    description:
+      "Led operational activities and coordinated management tasks for The Legal Club VSIT.",
+
+    achievements: [
+      "Managed club operations and ensured smooth execution of activities",
+      "Coordinated with students and management for events and communication",
+      "Developed leadership and people management skills",
+      "Handled operational planning and team coordination",
+    ],
+
     type: "leadership",
   },
+
+  // ── The Legal Club VSIT - Head of PR ───────────────────────
   {
-    id: "ta-cs2000",
-    title: "Teaching Assistant — CS2000",
-    company: "Northeastern University",
-    location: "Boston, Massachusetts, USA",
-    startDate: "September 2025",
-    endDate: "Present",
+    id: "legal-club-pr-head",
+    title: "Head of Public Relations",
+    company: "The Legal Club VSIT",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "November 2021",
+    endDate: "July 2023",
     description:
-      "Serving as a Teaching Assistant for CS2000, supporting students across two consecutive semesters.",
+      "Served as the first PR Head of the club during its inaugural year, handling communication and public relations activities.",
+
     achievements: [
-      "Supporting students through office hours, grading, and one-on-one mentoring across Fall 2025 and Spring 2026",
-      "Assisting the instructor with course logistics, assignment feedback, and classroom support",
-      "Providing guidance to students on coursework and academic development",
+      "Became the first PR Head during the club's inaugural year",
+      "Handled message drafting, report writing, and event coordination",
+      "Ensured smooth communication between students and management",
+      "Built strong public relations and communication skills",
     ],
+
+    type: "leadership",
+  },
+
+  // ── The Legal Club VSIT - PR Member ────────────────────────
+  {
+    id: "legal-club-pr-member",
+    title: "PR Member",
+    company: "The Legal Club VSIT",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "August 2021",
+    endDate: "November 2021",
+    description:
+      "Worked as a PR Member during the inaugural year of the club and gained practical public relations experience.",
+
+    achievements: [
+      "Assisted in PR activities and communication handling",
+      "Supported event management and coordination tasks",
+      "Developed teamwork and communication skills",
+    ],
+
+    type: "leadership",
+  },
+
+  // ── FinTree ────────────────────────────────────────────────
+  {
+    id: "fintree-assistant-manager",
+    title: "Assistant Manager",
+    company: "FinTree",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "April 2023",
+    endDate: "December 2023",
+    description:
+      "Managed counseling, operations, sales, and business development activities for FinTree Mumbai.",
+
+    achievements: [
+      "Contributed to a 20% revenue surge through counseling and sales strategies",
+      "Guided 300+ students and professionals for CFA, FRM, and Financial Modeling courses",
+      "Managed operations, sales, R&D, and business development activities",
+      "Received appreciation for strong counseling, operations, and sales performance",
+    ],
+
     type: "work",
   },
 
-  // ── Previous Work Experience ───────────────────────────────────────
+  // ── E-Cell VSIT ────────────────────────────────────────────
   {
-    id: "full-stack-dev",
-    title: "Full Stack Web Developer",
-    company: "SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "January 2024",
-    endDate: "June 2024",
+    id: "ecell-event-manager",
+    title: "Event Manager",
+    company: "E-cell VSIT",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "May 2022",
+    endDate: "June 2023",
     description:
-      "Designed and implemented a web portal for faculty-student collaboration in UROP and Capstone projects.",
+      "Managed events and coordinated activities as part of the entrepreneurship cell at VSIT.",
+
     achievements: [
-      "Developed a full-stack web portal using React.js, Node.js, and MongoDB for 3000+ UROP/Capstone students",
-      "Enabled task tracking, document sharing, and access control to streamline collaboration",
-      "Optimized and enhanced UI/UX, reducing page load time by 60% and improving responsiveness across devices",
-      "Achieved 75% grading accuracy improvement and 50% evaluation efficiency boost through workflow automation",
+      "Organized and managed student events and activities",
+      "Worked with teams for smooth event execution",
+      "Developed teamwork and event management skills",
+      "Handled coordination and communication responsibilities",
     ],
-    type: "work",
-  },
-  {
-    id: "tech-intern",
-    title: "Technical Intern",
-    company: "SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "October 2023",
-    endDate: "June 2024",
-    description:
-      "Directed technical operations for university events, encompassing website development and promotional materials.",
-    achievements: [
-      "Orchestrated technical operations for 30+ university events, designing and deploying websites with integrated payment gateways",
-      "Increased event participation by 25% through effective technical solutions",
-      "Engineered dashboards and automated flows, increasing user satisfaction by 75% and cutting coordination time by 60%",
-      "Ensured smooth execution through cross-functional collaboration, achieving 95% client satisfaction",
-    ],
-    type: "work",
+
+    type: "leadership",
   },
 
-  // ── Research ───────────────────────────────────────────────────────
+  // ── Evepaper ───────────────────────────────────────────────
   {
-    id: "ddos-detection",
-    title: "DDoS Attack Detection using Deep Learning",
-    company: "SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "March 2023",
+    id: "evepaper-research-promotion",
+    title: "Research and Promotion Intern",
+    company: "Evepaper",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "February 2023",
     endDate: "May 2023",
     description:
-      "Research under Dr. Sambit Kumar Mishra on detecting DDoS attacks in cloud environments using deep learning techniques.",
+      "Worked on business research, social media growth, and presentation activities during the internship.",
+
     achievements: [
-      "Developed advanced anomaly detection algorithms, achieving an impressive 82% accuracy in threat detection",
-      "Swiftly implemented countermeasures to thwart potential attacks, resulting in a 40% reduction in security breaches",
-      "Applied deep learning models to identify patterns in network traffic for real-time detection of suspicious activities",
-      "Created a scalable monitoring system to handle large volumes of cloud traffic with minimal false positives",
+      "Analyzed operations of multiple companies to understand business strategies",
+      "Helped increase LinkedIn followers using social media strategies",
+      "Improved presentation and communication skills",
+      "Collaborated with team members on projects and research activities",
+      "Expanded professional network through industry interactions",
     ],
-    type: "research",
-  },
-  {
-    id: "education-prediction",
-    title: "Higher Education Prediction Algorithm",
-    company: "SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "June 2022",
-    endDate: "October 2022",
-    description:
-      "Research under Prof. T. Ragunathan on predicting student acceptance into Master's programs based on academic performance metrics.",
-    achievements: [
-      "Developed an AI ML model predicting student acceptance into Masters PG College with 78% accuracy",
-      "Trained the model on diverse exam scores to suggest colleges based on proximity to students' IELTS, GRE, and TOEFL scores",
-      "Led data acquisition and cleansing, ensuring dataset integrity with a 95% accuracy rate",
-      "Optimized the algorithm for efficiency and reliability in making personalized education recommendations",
-    ],
+
     type: "research",
   },
 
-  // ── Leadership ─────────────────────────────────────────────────────
+  // ── Big Bulls 77 ───────────────────────────────────────────
   {
-    id: "technical-executive",
-    title: "Technical Executive",
-    company: "Student Council SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "August 2023",
-    endDate: "May 2024",
+    id: "bigbulls-financial-analyst",
+    title: "Financial Analyst Intern",
+    company: "Big Bulls 77",
+    location: "Mumbai, Maharashtra, India",
+    startDate: "December 2022",
+    endDate: "February 2023",
     description:
-      "Oversaw technical operations for university events and initiatives as part of the Student Council.",
+      "Worked as a Financial Analyst Intern focusing on international capital markets and forex trading analysis.",
+
     achievements: [
-      "Oversaw technical operations, utilizing advanced methodologies to achieve project milestones",
-      "Engineered and enhanced event websites for cultural festivals, ensuring top-tier performance with creative designs",
-      "Managed audiovisual equipment, software applications, and ensured seamless online and offline interactions",
-      "Resolved technical issues promptly, minimizing disruptions and maintaining high standards of execution",
+      "Gained practical exposure to international capital markets",
+      "Learned forex trading concepts and investment strategies",
+      "Conducted financial analysis and report preparation",
+      "Collaborated with senior analysts for research and recommendations",
     ],
-    type: "leadership",
-  },
-  {
-    id: "technical-convener",
-    title: "Technical Team Convener",
-    company: "Student Council SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "May 2022",
-    endDate: "May 2024",
-    description:
-      "Led the university's technical team, organizing and executing technical aspects of student events.",
-    achievements: [
-      "Led multidisciplinary technical team, achieving seamless collaboration and innovative solutions",
-      "Organized brainstorming sessions with team members to generate website ideas and review progress",
-      "Increased student engagement by 40% through committee formation and industry-aligned website redesigns",
-      "Bridged the gap between technical requirements and student initiatives",
-    ],
-    type: "leadership",
-  },
-  {
-    id: "student-council-member",
-    title: "Member",
-    company: "Student Council SRM University - AP",
-    location: "Andhra Pradesh, India",
-    startDate: "May 2021",
-    endDate: "May 2022",
-    description:
-      "Served as an active member of the university's student council, contributing to student initiatives.",
-    achievements: [
-      "Played a pivotal role in organizing and executing various student events and initiatives",
-      "Collaborated effectively with peers and faculty ensuring the smooth execution of events",
-      "Enhanced the overall student experience through meticulous planning and coordination",
-      "Contributed to website development and technical aspects of student programs",
-    ],
-    type: "leadership",
-  },
-  {
-    id: "student-council-affiliate",
-    title: "Affiliate",
-    company: "Student Council SRM University - AP",
-    location: "Vijayawada, India",
-    startDate: "November 2020",
-    endDate: "May 2021",
-    description:
-      "Started as an affiliate member in the student council, supporting various initiatives.",
-    achievements: [
-      "Assisted in the organization and execution of student events",
-      "Supported the technical team with website and digital content",
-      "Contributed to planning and logistics for university programs",
-      "Participated in student engagement activities and feedback collection",
-    ],
-    type: "leadership",
+
+    type: "research",
   },
 ];

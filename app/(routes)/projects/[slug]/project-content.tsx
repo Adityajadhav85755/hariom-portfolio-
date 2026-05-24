@@ -16,6 +16,8 @@ interface ProjectContentProps {
 }
 
 export function ProjectContent({ project }: ProjectContentProps) {
+  console.log("Project data:", project);
+  console.log("Sector reports:", project.sectorReports);
   return (
     <>
       {/* Header with star background */}
@@ -77,9 +79,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
                 className="mb-8"
               >
                 <h2 className="mb-4 text-2xl font-bold">Overview</h2>
-                <p className="leading-relaxed text-muted-foreground">
-                  {project.longDescription}
-                </p>
+                <p className="leading-relaxed text-muted-foreground">{project.longDescription}</p>
               </motion.div>
             )}
 
@@ -92,17 +92,125 @@ export function ProjectContent({ project }: ProjectContentProps) {
               <h2 className="mb-4 text-2xl font-bold">Key Achievements</h2>
               <div className="space-y-3">
                 {project.achievements.map((achievement, i) => (
-                  <div
-                    key={i}
-                    className="flex items-start gap-3 rounded-lg border bg-card p-4"
-                  >
+                  <div key={i} className="flex items-start gap-3 rounded-lg border bg-card p-4">
                     <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                     <span className="text-sm leading-relaxed">{achievement}</span>
                   </div>
                 ))}
               </div>
             </motion.div>
+            
+            {/* Equity Research Reports */}
+{project.equityReports?.map((report) => (
+  <div
+    key={report.id}
+    className="border rounded-xl p-4 mb-4 shadow-sm"
+  >
+    <h3 className="text-xl font-semibold mb-2">
+      {report.title}
+    </h3>
+
+    <p className="text-gray-600 mb-4">
+      {report.description}
+    </p>
+
+    <div className="flex gap-3 flex-wrap">
+
+      {/* PDF Button */}
+      <a
+        href={report.pdf}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
+      >
+        View PDF
+      </a>
+
+      {/* Link Button */}
+      <a
+        href={report.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition"
+      >
+        Open Link
+      </a>
+
+    </div>
+  </div>
+))}
+
+{/* Macroeconomic Report Links */}
+{project.links?.map((link, index) => (
+  <div
+    key={index}
+    className="border rounded-xl p-4 mb-4 shadow-sm"
+  >
+    <h3 className="text-xl font-semibold mb-2">
+      {link.name}
+    </h3>
+
+    <p className="text-gray-600 mb-4">
+      Open the macroeconomic analysis report and research insights.
+    </p>
+
+    <a
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition"
+    >
+      Open Report
+    </a>
+  </div>
+))}
+            {/* Sector Reports */}
+            {project.sectorReports && project.sectorReports.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="mt-8"
+              >
+                <h2 className="mb-4 text-2xl font-bold">Sector Reports</h2>
+                <div className="space-y-4">
+                  {project.sectorReports.map((report) => (
+                    <div
+                      key={report.id}
+                      className="border rounded-xl p-4 shadow-sm"
+                    >
+                      <h3 className="text-xl font-semibold mb-2">
+                        {report.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4">
+                        {report.description}
+                      </p>
+                      <div className="flex gap-3 flex-wrap">
+                        <a
+                          href={report.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                        >
+                          View PDF
+                        </a>
+                        <a
+                          href={report.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                        >
+                          Open Link
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
           </div>
+
+          
 
           {/* Right sidebar */}
           <div>
@@ -114,7 +222,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
               <Card className="sticky top-24">
                 <CardContent className="space-y-6 p-6">
                   <div>
-                    <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    <h3 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground uppercase">
                       Tech Stack
                     </h3>
                     <div className="flex flex-wrap gap-2">
@@ -130,37 +238,21 @@ export function ProjectContent({ project }: ProjectContentProps) {
                     <>
                       <Separator />
                       <div>
-                        <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                        <h3 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground uppercase">
                           Links
                         </h3>
                         <div className="flex flex-col gap-2">
                           {project.github && (
-                            <Button
-                              variant="outline"
-                              className="w-full justify-start"
-                              asChild
-                            >
-                              <a
-                                href={project.github}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
+                            <Button variant="outline" className="w-full justify-start" asChild>
+                              <a href={project.github} target="_blank" rel="noopener noreferrer">
                                 <Github className="mr-2 h-4 w-4" />
                                 GitHub Repository
                               </a>
                             </Button>
                           )}
                           {project.liveUrl && (
-                            <Button
-                              variant="outline"
-                              className="w-full justify-start"
-                              asChild
-                            >
-                              <a
-                                href={project.liveUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
+                            <Button variant="outline" className="w-full justify-start" asChild>
+                              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                                 <ExternalLink className="mr-2 h-4 w-4" />
                                 Live Demo
                               </a>
