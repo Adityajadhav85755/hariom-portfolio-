@@ -44,7 +44,7 @@ export const projects: Project[] = [
       description:
         "Comprehensive equity research report on NBCC Ltd including valuation analysis, financial performance, and growth outlook.",
 
-      pdf: "D:/Portfolios/achyut-portfolio/public/pdfs/NBCC India Equity Research Report by Omniscient Securities Ltd.pdf",
+      pdf: "/pdfs/ls/NBCC India Equity Research Report by Omniscient Securities Ltd.pdf",
 
       link:
         "https://drive.google.com/file/d/1k3-00hWdoHV41YA7FDgN7Vt7T5Px_7sn/view",
@@ -57,10 +57,10 @@ export const projects: Project[] = [
       description:
         "Detailed equity research analysis of Black Box Ltd covering financial ratios, DCF valuation, and investment recommendation.",
 
-      pdf: "/pdfs/Black Box Ltd Equity Research Report.pdf",
+      pdf: "/pdfs/ls/Black Box Ltd Report - by Tradonomy-3.pdf",
 
       link:
-        "D:/Portfolios/achyut-portfolio/public/pdfs/Black Box Ltd Report - by Tradonomy-3.pdf",
+        "https://drive.google.com/file/d/1w93M3IAGZCsWFIupRPXvPynacsQCf66L/view",
     },
   ],
 
